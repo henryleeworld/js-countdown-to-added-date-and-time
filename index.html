@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="倒數計時直到新增日期和時間" />
+        <meta property="og:description" content="使用倒數計時加強宣傳近期活動，讓潛在客戶得知即將到來的優惠或特別活動。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/countdown.css" />
+        <title>倒數計時直到新增日期和時間</title>
+    </head>
+    <body>
+        <div class="container">
+            <h5>新增日期和時間</h5>
+            <form id="addDate">
+                <input type="date" name="date" id="date" />
+                <input type="time" name="time" id="time" />
+                <button type="submit">提交</button>
+            </form>
+            <p class="hidden">您有</p>
+            <div class="pickedTime">
+                <div class="time">
+                    <span id="time-years">-</span>
+                    <p>年</p>
+                </div>
+
+                <div class="time">
+                    <span id="time-days">-</span>
+                    <p>天</p>
+                </div>
+                <div class="time">
+                    <span id="time-hours">-</span>
+                    <p>時</p>
+                </div>
+                <div class="time">
+                    <span id="time-minutes">-</span>
+                    <p>分</p>
+                </div>
+                <div class="time">
+                    <span id="time-seconds">-</span>
+                    <p>秒</p>
+                </div>
+            </div>
+            <p class="hidden">直到：<span id="until"></span></p>
+            <h1>2021 年元旦即將到來</h1>
+            <p>元旦，指全世界新曆曆法中的新年第一天，全世界各國稱 1 月 1 日為元旦，是公曆新年，陽曆新年，新曆新年，或國曆新年，是世界多數國家的法定假日。</p>
+            <div class="boxes">
+                <div class="box">
+                    <span id="days">-</span>
+                    <p>天</p>
+                </div>
+                <div class="box">
+                    <span id="hours">-</span>
+                    <p>時</p>
+                </div>
+                <div class="box">
+                    <span id="minutes">-</span>
+                    <p>分</p>
+                </div>
+                <div class="box">
+                    <span id="seconds">-</span>
+                    <p>秒</p>
+                </div>
+            </div>
+        </div>
+        <script src="js/countdown.js" defer></script>
+    </body>
+</html>
